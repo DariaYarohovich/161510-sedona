@@ -1,0 +1,52 @@
+.review {
+    @include container;
+}
+.review__block {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: 1px solid #e5e5e5;
+}
+.review__block-title {
+    display: block;
+    margin-bottom: 20px;
+    @include text;
+    font-size: 14px;
+    font-weight: 700;
+}
+.review__filed-name {
+    @include text;
+    font-size: 12px;
+}
+.review__text-field {
+    @include text;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: none;
+}
+.review-opinion {
+    margin-bottom: 14px;
+    @include text;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: none;
+}
+.review-opinion:last-child {
+    margin-bottom: 0;
+}
+.review-sight {
+    margin-bottom: 25px;
+    @include text;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: none;
+}
+.review__textarea {
+    width: 240px;
+    height: 20px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    @include text;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: none;
+}

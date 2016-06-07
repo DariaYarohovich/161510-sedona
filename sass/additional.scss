@@ -1,0 +1,17 @@
+@mixin container {
+    width: 280px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@mixin clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+@mixin text {
+    font-family: "PT Sans", "Arial", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+$body-color: #81b3d2;

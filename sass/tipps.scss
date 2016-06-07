@@ -1,0 +1,26 @@
+.tipps {
+    @include container;
+    padding-top: 20px;
+    padding-bottom: 22px;
+}
+.tipps__item {
+    padding-bottom: 20px;
+    
+}
+.tipps__content {
+    width: 230px;
+    padding-left: 50px;
+    margin-bottom: 0;
+}
+.tipps__title {
+    display: block;
+    @include text;
+    font-size: 17px;
+    font-weight: 700px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.tipps__description {
+    @include text;
+    font-size: 12.7px;
+}
