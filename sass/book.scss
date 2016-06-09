@@ -1,0 +1,19 @@
+.book {
+    @include container;
+    padding-top: 26px;
+    padding-bottom: 50px;
+}
+.book__title {
+    display: block;
+    @include text;
+    font-size: 18px;
+    font-weight: 700;
+}
+.book__description {
+    margin-top: 20px;
+    margin-bottom: 32px;
+    @include text;
+    font-size: 12.5px;
+    line-height: 25px;
+    text-align: center;
+}

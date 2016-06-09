@@ -1,0 +1,18 @@
+.video {
+    @include container;
+    margin-bottom: 80px;
+}
+.video__title {
+    display: block;
+    @include text;
+    font-size: 17px;
+    font-weight: 700;
+}
+.video__description {
+    @include text;
+    font-size: 12px;
+    line-height: 18px;
+}
+.video__box {
+    margin-left: -20px;
+}

@@ -1,0 +1,18 @@
+.introduction{
+    @include container;
+    padding-top: 37px;
+    padding-bottom: 30px;
+}
+.introduction__title {
+    margin: 0;
+    margin-bottom: 30px;
+    @include text;
+    font-size: 16.5px;
+    line-height: 25px;
+    font-weight: 700;
+}
+.introduction__text {
+    @include text;
+    font-size: 12.5px;
+    line-height: 25px;
+}

@@ -1,0 +1,26 @@
+.photo {
+    @include container;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    border-top: 1px solid #e5e5e5;
+}
+.photo img {
+    margin-bottom: 20px;
+}
+.photo__name {
+    @include text;
+    font-size: 12px;
+    font-weight: 700;
+}
+.photo__author {
+    @include text;
+    font-size: 12px;
+    text-transform: none;
+}
+.photo__likes {
+    display: inline-block;
+    padding-left: 37px;
+    @include text;
+    font-size: 14px;
+    font-weight: 700;
+}

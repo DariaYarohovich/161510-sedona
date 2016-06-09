@@ -1,0 +1,32 @@
+.social-links {
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 0;
+}
+.social-links__item {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 6px;
+    width: 48px;
+    height: 48px;
+    background-color: #81b3d2;
+}
+.social-links__item:last-child {
+    margin-right: 0;
+}
+.social-links__item--twitter {
+    background-image: url("../img/icon-twitter.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.social-links__item--facebook {
+    background-image: url("../img/icon-facebook.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.social-links__item--youtube {
+    background-image: url("../img/icon-youtube.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
