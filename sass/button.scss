@@ -11,3 +11,18 @@
     text-align: center;
     border: none;
 }
+
+@media (min-width: 768px) {
+    .btn {
+        font-size: 22px;
+    }
+    .review__button {
+        width: 324px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .review__button {
+        width: 480px;
+    }
+}

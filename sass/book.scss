@@ -17,3 +17,27 @@
     line-height: 25px;
     text-align: center;
 }
+
+@media (min-width: 768px) {
+    .book {
+        box-sizing: border-box;
+        padding-top: 55px;
+        padding-bottom: 58px;
+    }
+    .book__wrap {
+        width: 460px;
+        margin: 0 auto;
+    }
+    .book__title {
+    font-size: 26px;
+    }
+    .book__description {
+        margin-top: 28px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .book {
+        padding-bottom: 66px;
+    }
+}

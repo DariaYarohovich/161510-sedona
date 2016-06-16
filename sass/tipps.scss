@@ -4,7 +4,8 @@
     padding-bottom: 22px;
 }
 .tipps__item {
-    padding-bottom: 20px;
+    padding-bottom: 15px;
+    padding-top: 5px;
     
 }
 .tipps__content {
@@ -23,4 +24,72 @@
 .tipps__description {
     @include text;
     font-size: 12.7px;
+}
+.tipps__item--home {
+    background-image: url("../img/icon-house.svg");
+    background-repeat: no-repeat;
+    background-position: 0px 7px;
+    background-size: 15%;
+}
+.tipps__item--gift {
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-position: 4px 6px;
+    background-size: 12%;
+}
+.tipps__item--food {
+    background-image: url("../img/icon-burger.svg");
+    background-repeat: no-repeat;
+    background-position: -1px 12px;
+    background-size: 14%;
+}
+@media (min-width: 768px) {
+    .tipps {
+        font-size: 0;
+        padding: 0;
+        height: 330px;
+    }
+    .tipps__item {
+        box-sizing: border-box;
+        width: 256px;
+        height: 330px;
+        padding: 50px;
+        padding-bottom: 65px;
+        padding-top: 0;
+        display: inline-block;
+    }
+    .tipps__content {
+        padding: 0;
+        margin-top: 160px;
+    }
+    .tipps__item--home {
+        background-position: center 57px;
+        background-size: 30%;
+    }
+     .tipps__item--gift {
+        background-position: center 55px;
+         background-size: 25%;
+    }
+     .tipps__item--food {
+        background-position: center 60px;
+         background-size: 30%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .tipps__item {
+        width: 400px;
+    }
+    .tipps__item--home {
+        background-position: center 57px;
+        background-size: 19%;
+    }
+     .tipps__item--gift {
+        background-position: center 55px;
+         background-size: 16%;
+    }
+     .tipps__item--food {
+        background-position: center 60px;
+         background-size: 19%;
+    }
 }

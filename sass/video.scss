@@ -1,18 +1,54 @@
 .video {
     @include container;
-    margin-bottom: 80px;
+    padding-top: 38px;
+    margin-bottom: 30px;
+    background-color: green;
+    opacity: 0.3;
 }
 .video__title {
     display: block;
     @include text;
     font-size: 17px;
     font-weight: 700;
+    margin-bottom: 30px;
 }
 .video__description {
     @include text;
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 13px;
+    line-height: 23px;
+    margin: 0;
+    margin-bottom: 40px;
 }
 .video__box {
     margin-left: -20px;
+    height: 270px;
+    background-color: red;
+    opacity: 0.5;
+}
+
+@media (min-width: 768px) {
+    .video {
+        @include container;
+        padding-top: 63px;
+    }
+    .video__title {
+        font-size: 25px;
+    }
+    .video__description {
+        width: 420px;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+    .video__box {
+        height: 500px;
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 1280px) {
+    .video {
+        width: 800px;
+        margin: 0 auto;
+        margin-bottom: 87px;
+    }
 }
