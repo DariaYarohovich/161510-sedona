@@ -8,8 +8,8 @@
     display: inline-block;
     vertical-align: top;
     margin-right: 6px;
-    width: 48px;
-    height: 48px;
+    width: 47px;
+    height: 47px;
     background-color: #81b3d2;
 }
 .social-links__item:last-child {
@@ -29,4 +29,21 @@
     background-image: url("../img/icon-youtube.svg");
     background-position: center center;
     background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+    .social-links {
+        float: left;
+        width: 256px;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1280px) {
+    .social-links {
+        float: left;
+        width: 400px;
+        margin-bottom: 0;
+        text-align: center;
+    }
 }

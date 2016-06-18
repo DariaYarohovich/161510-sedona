@@ -2,6 +2,8 @@
     @include container;
     padding-top: 37px;
     padding-bottom: 30px;
+    background-color: violet;
+    opacity: 0.2;
 }
 .introduction__title {
     margin: 0;
@@ -10,9 +12,63 @@
     font-size: 16.5px;
     line-height: 25px;
     font-weight: 700;
+    text-align: center;
 }
 .introduction__text {
     @include text;
     font-size: 12.5px;
-    line-height: 25px;
+    line-height: 22px;
+    margin-bottom: 0;
+}
+
+.introduction__text--form {
+    font-size: 14px;
+    line-height: 24px;
+}
+.introduction--form {
+    padding-bottom: 17px;
+}
+
+@media (min-width: 768px) {
+    .introduction {
+        width: 500px;
+        padding-top: 50px;
+        padding-bottom: 35px;
+    }
+    .introduction__title {
+        font-size: 19px;
+    }
+    .introduction__text {
+        margin: 0 auto;
+        width: 437px;
+    }
+    .introduction--photo {
+        @include container;
+        padding-top: 76px;
+        padding-bottom: 74px;
+    }
+    .introduction__title--photo {
+        font-size: 27px;
+    }
+    
+    .introduction--form {
+        margin: 0 auto;
+        padding-top: 74px;
+    }
+    .introduction__title--form {
+        font-size: 26px;
+    }
+    .introduction__text--form {
+        font-size: 12px;
+    }
+    
+}
+
+@media (min-width: 1280px) {
+    .introduction--photo {
+        padding-top: 113px;
+    }
+    .introduction--form {
+        padding-top: 112px;
+    }
 }

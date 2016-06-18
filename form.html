@@ -7,30 +7,30 @@
   </head>
   <body>
       <header class="page-header">
-          <div class="page-header__wrap">
+          <div class="page-header__nav-wrap">
               <nav class="main-nav  main-nav--closed">
                   <ul class="main-nav__list">
-                      <li><a class="main-nav__item" href="index.html">Главная</a></li>
+                      <!--<li><a class="main-nav__item">Главная</a></li>
                       <li><a class="main-nav__item" href="photo.html">Фото и видео</a></li>
-                      <li><a class="main-nav__item">Форма отзыва</a></li>
-                      <li><a class="main-nav__item" href="#">HTML ACADEMY</a></li>
+                      <li><a class="main-nav__item" href="form.html">Форма отзыва</a></li>
+                      <li><a class="main-nav__item" href="#">HTML ACADEMY</a></li>-->
                   </ul>
+                  <button class="page-header__menu-toggle" type="button">Открыть меню</button>
               </nav>
               <div class="page-header__logo">
                   <img src="" alt="" title="" width="" height="">
-                  <button class="page-header__menu-toggle" type="button">Открыть меню</button>
               </div>
+          </div>
               <div class="page-header__image  page-header__image--short">
                   <h1 class="page-header__main-title page-header__main-title--short">Sedona</h1>
               </div>
-          </div>
       </header>
-      <div class="introduction">
-          <p class="introduction__title">Оставьте свой отзыв</p>
-          <p class="introduction__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <div class="introduction introduction--form">
+          <p class="introduction__title introduction__title--form">Оставьте свой отзыв</p>
+          <p class="introduction__text introduction__text--form">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
       <form class="review">
-          <fieldset class="review__block">
+          <fieldset class="review__block review__block--name">
               <legend class="review__block-title">Представьтесь, пожалуйста:</legend>
               <div class="review__text-field">
                   <label class="review__field-name">
@@ -51,7 +51,7 @@
                   </label>
               </div>
           </fieldset>
-          <fieldset class="review__block">
+          <fieldset class="review__block review__block--contacts">
               <legend class="review__block-title">Контактная информация:</legend>
               <div class="review__text-field  review__text-field--phone">
                   <label class="review__field-name">
@@ -66,7 +66,7 @@
                   </label>
               </div>
           </fieldset>
-          <fieldset class="review__block">
+          <fieldset class="review__block review__block--opinion">
               <legend class="review__block-title">Ваше общее впечатление:</legend>
               <div class="review__opinions">
                   <label class="review__opinion">
@@ -83,7 +83,7 @@
                   </label>
               </div>
           </fieldset>
-          <fieldset class="review__block">
+          <fieldset class="review__block review__block--sights">
               <legend class="review__block-title">Посещенные достопримечательности:</legend>
               <div class="review__sights">
                   <label class="review__sight">
@@ -104,8 +104,8 @@
                   </label>
               </div>
           </fieldset>
-          <div class="review__block">
-              <legend class="review__block-title">Опишите свои эмоции:</legend>
+          <div class="review__block review__block--textarea">
+              <legend class="review__block-title review__block-title--textarea">Опишите свои эмоции:</legend>
               <textarea class="review__textarea" type="text">Опишите подробно все свои восторги</textarea>
           </div>
           <button class="review__button btn" type="submit">Отправить отзыв</button>
