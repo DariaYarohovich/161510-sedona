@@ -1,47 +1,52 @@
 .photo {
+    display: flex;
+    flex-wrap: wrap;
+}
+.photo__block {
     @include container;
     padding-top: 22px;
-    padding-bottom: 17px;
+    padding-bottom: 20px;
     border-top: 1px solid #e5e5e5;
-    background-color: green;
-    opacity: 0.2;
 }
 .photo__img {
     margin-bottom: 20px;
     height: 280px;
     width: 280px;
-    background-color: red;
-    opacity: 1.4;
 }
 .photo__desc {
-    background-color: yellow;
-    opacity: 1.5;
+    display: flex;
+    flex-direction: column;
 }
 .photo__name {
     @include text;
-    font-size: 12px;
-    font-weight: 700;
+    text-align: left;
+    font-size: 14px;
+    font-family: "PT Sans Bold", "Arial", sans-serif;
 }
 .photo__author {
     @include text;
-    font-size: 12px;
+    font-size: 14px;
     text-transform: none;
 }
 .photo__likes {
-    display: inline-block;
     padding-left: 37px;
     @include text;
+    font-family: "PT Sans Bold", "Arial", sans-serif;
+    text-align: left;
     font-size: 14px;
     font-weight: 700;
     padding-top: 18px;
+    background-image: url("../../img/icon-like.svg");
+    background-repeat: no-repeat;
+    background-position: 0 14px;
 }
 
 @media (min-width: 768px) {
-    .photo__wrap {
+  .photo {
         @include container;
         font-size: 0;
     }
-    .photo {
+   .photo__block {
         display: inline-block;
         width: 324px;
         border-color: #fff;
@@ -62,19 +67,36 @@
         margin-bottom: 0;
     }
     .photo__desc {
+        flex-direction: row;
+        justify-content: space-between;
         box-sizing: border-box;
         height: 80px;
+        padding: 20px;
+        padding-top: 17px;
+        background-color: #f2f2f2;
+    }
+    .photo__name {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .photo__likes {
+        padding-top: 13px;
+        background-position: 4px 10px;
     }
 }
 
 @media (min-width: 1280px) {
-    .photo__wrap {
-        @include container;
+   .photo {
+       padding-left: 0;
+       padding-right: 0;
     }
     .photo__desc {
         margin-top: -80px;
+        padding-top: 20px;
+        color: #ffffff;
+        background-color: rgba(0, 0, 0, 0.3);
     }
-    .photo {
+  .photo__block {
         width: 400px;
     }
     .photo--first {
