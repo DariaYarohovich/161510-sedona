@@ -9,8 +9,15 @@
     vertical-align: top;
     margin-right: 6px;
     width: 47px;
-    height: 47px;
-    background-color: #81b3d2;
+    height: 48px;
+    background-color: $body-color;
+}
+.social-links__item:hover {
+    background-color: darken($body-color, 7%);
+}
+.social-links__item:focus,
+.social-links__item:active {
+    background-color: darken($body-color, 10%);
 }
 .social-links__item:last-child {
     margin-right: 0;

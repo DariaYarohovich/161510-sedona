@@ -1,11 +1,11 @@
 .tipps {
     @include container;
     padding-top: 20px;
-    padding-bottom: 22px;
+    padding-bottom: 26px;
 }
 .tipps__item {
-    padding-bottom: 15px;
-    padding-top: 5px;
+    padding-bottom: 13px;
+    padding-top: 2px;
     
 }
 .tipps__content {
@@ -14,16 +14,17 @@
     margin-bottom: 0;
 }
 .tipps__title {
-    display: block;
     @include text;
+    font-family: "PT Sans Bold", "Arial", sans-serif;
     font-size: 17px;
     font-weight: 700px;
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
 }
 .tipps__description {
     @include text;
-    font-size: 12.7px;
+    font-size: 14px;
+    line-height: 20px;
 }
 .tipps__item--home {
     background-image: url("../img/icon-house.svg");
@@ -45,6 +46,8 @@
 }
 @media (min-width: 768px) {
     .tipps {
+        display: flex;
+        width: 100%;
         font-size: 0;
         padding: 0;
         height: 330px;
@@ -57,6 +60,7 @@
         padding-bottom: 65px;
         padding-top: 0;
         display: inline-block;
+        vertical-align: top;
     }
     .tipps__content {
         padding: 0;
@@ -65,6 +69,7 @@
     .tipps__item--home {
         background-position: center 57px;
         background-size: 30%;
+        order: -2;
     }
      .tipps__item--gift {
         background-position: center 55px;
@@ -73,6 +78,19 @@
      .tipps__item--food {
         background-position: center 60px;
          background-size: 30%;
+         order: -1;
+    }
+    .tipps__title {
+        margin-top: -2px;
+        margin-bottom: 21px;
+        font-size: 21px;
+        line-height: 28px;
+        text-align: center;
+        width: 156px;
+    }
+    .tipps__description {
+        display: block;
+        width: 165px;
     }
 }
 
@@ -91,5 +109,11 @@
      .tipps__item--food {
         background-position: center 60px;
          background-size: 19%;
+    }
+    .tipps__title {
+        width: 300px;
+    }
+    .tipps__description {
+        width: 290px;
     }
 }
