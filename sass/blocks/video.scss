@@ -1,0 +1,191 @@
+.video {
+    padding-top: 38px;
+    margin-bottom: 33px;
+}
+.video__title {
+    display: block;
+    @include text;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.video__description {
+    @include text;
+    font-size: 14px;
+    line-height: 23px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    width: 240px;
+}
+.video__box {
+    display: flex;
+    flex-direction: column;
+    height: 270px;
+}
+.video__controlls {
+    display: flex;
+    flex-wrap: wrap;
+    width: 280px;
+    height: 110px;
+    margin: 0 auto;
+    margin-top: -49px;
+}
+.video__scroll {
+    position: relative;
+    width: 280px;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.video__scroll-line {
+    position: absolute;
+    top: 21px;
+    left: 23px;
+    width: 235px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.video__scroll-toggle {
+    position: absolute;
+    top: 18px;
+    left: 58px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.video__reverse {
+    width: 70px;
+    height: 66px;
+    background-color: #f2f2f2;
+    background-image: url(../../img/icon-video-replay.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+    position: relative;
+}
+.video__subtitles {
+    width: 70px;
+    height: 66px;
+    padding-left: 70px;
+    background-color: #f2f2f2;
+    background-image: url(../../img/icon-video-subtitles.svg);
+    background-repeat: no-repeat;
+    background-position: 104px center;
+    cursor: pointer;
+    position: relative;
+}
+.video__expand {
+    width: 70px;
+    height: 66px;
+    background-color: #f2f2f2;
+    background-image: url(../../img/icon-video-fullscreen.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+    position: relative;
+}
+.video__reverse:hover {
+    background-image: url(../../img/icon-video-replay-hover.svg);
+    transition-duration: 0.3s;
+}
+.video__subtitles:hover {
+    background-image: url(../../img/icon-video-subtitles-hover.svg);
+    transition-duration: 0.3s;
+}
+.video__expand:hover {
+    background-image: url(../../img/icon-video-fullscreen-hover.svg);
+    transition-duration: 0.3s;
+}
+
+.video__reverse:active,
+.video__reverse:focus {
+    background-image: url(../../img/icon-video-replay-active.svg);
+}
+.video__subtitles:active,
+.video__subtitles:focus {
+    background-image: url(../../img/icon-video-subtitles-active.svg);
+}
+.video__expand:active,
+.video__expand:focus {
+    background-image: url(../../img/icon-video-fullscreen-active.svg);
+}
+
+@media (min-width: 768px) {
+    .video {
+        @include container;
+        padding-top: 57px;
+        margin-bottom: 42px;
+    }
+    .video__title {
+        font-size: 30px;
+        margin-bottom: 26px;
+    }
+    .video__description {
+        width: 420px;
+        margin: 0 auto;
+        margin-bottom: 73px;
+    }
+    .video__box {
+        height: 500px;
+        margin-left: 0;
+    }
+    .video__main {
+        width: 648px;
+        height: 500px;
+    }
+    .video__controlls {
+        width: 100%;
+        margin-top: -97px;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .video__scroll {
+    flex-grow: 1;
+    position: relative;
+    height: 93px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+    .video__scroll-line {
+    top: 45px;
+    width: 390px;
+}
+.video__scroll-toggle {
+    top: 42px;
+    left: 136px;
+}
+.video__reverse {
+    order: -1;
+    height: 93px;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-position: 33px center;
+    background-image: url(../../img/icon-video-replay-tablet.svg);
+}
+.video__subtitles {
+    height: 93px;
+    padding-left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-position: 15px center;
+    background-image: url(../../img/icon-video-subtitles-tablet.svg);
+}
+.video__expand {
+    height: 93px;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-position: 9px center;
+    background-image: url(../../img/icon-video-fullscreen-tablet.svg);
+}
+}
+
+@media (min-width: 1280px) {
+    .video {
+        width: 800px;
+        margin: 0 auto;
+        margin-bottom: 87px;
+        padding-top: 62px;
+    }
+    .video__main {
+        width: 800px;
+    }
+    .video__scroll-line {
+        width: 540px;
+}
+}

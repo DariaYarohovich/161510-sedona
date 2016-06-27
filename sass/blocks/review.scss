@@ -1,0 +1,440 @@
+.review {
+    margin-bottom: 36px;
+}
+.review__block {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: 1px solid #e5e5e5;
+    margin: 0px;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.review__block--name {
+    box-sizing: border-box;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.review__block--contacts {
+    box-sizing: border-box;
+    padding-bottom: 0;
+}
+.review__block--opinion {
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 29px;
+}
+.review__block--sights {
+    box-sizing: border-box;
+    padding-bottom: 7px;
+}
+.review__block--textarea {
+    box-sizing: border-box;
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
+.review__block-title{
+    display: block;
+    margin-bottom: 21px;
+    padding-top: 20px;
+    @include text;
+    font-size: 18px;
+    font-weight: 700;
+}
+.review__block-title--contacts {
+    margin-bottom: -3px;
+}
+.review__block-title--opinion {
+    margin-bottom: 0;
+}
+.review__block-title--sights {
+    margin-bottom: -5px;
+}
+.review__block-title--textarea {
+    padding-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.review__field-name {
+    @include text;
+    font-size: 14px;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+.review__field-name--contacts {
+    line-height: 30px;
+    padding-left: 20px;
+    text-align: left;
+}
+.review__text-field {
+    display: flex;
+    margin-bottom: 20px;
+    @include text;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: none;
+}
+.review__text-field--contacts {
+    flex-direction: column;
+    padding-bottom: 18px;
+}
+.review__text-input {
+    outline: none;
+    box-sizing: border-box;
+    height: 58px;
+    padding: 20px;
+    flex-grow: 1;
+    border: none;
+    background-color: #f2f2f2;
+}
+.review__text-input:hover {
+    background-color: #e5e5e5;
+}
+.review__text-input:focus {
+    background-color: #ffffff;
+    border: 4px solid #e5e5e5;
+    padding-left: 16px;
+}
+.review__text-input--contacts {
+    box-sizing: border-box;
+    width: 280px;
+}
+.review__input {
+   position: relative;
+}
+.review__icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 58px;
+    height: 58px;
+    background-color: #e6e6e6;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.review__tel-icon {
+    background-image: url("../../img/icon-phone.svg");
+}
+.review__email-icon {
+    background-image: url("../../img/icon-mail.svg");
+}
+.review__opinion {
+    display: block;
+    position: relative;
+    height: 58px;
+    margin-bottom: 11px;
+    padding-left: 75px;
+    @include text;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: none;
+    line-height: 58px;
+    text-align: left;
+    cursor: pointer;
+}
+.review__opinion:last-child {
+    margin-bottom: 0;
+}
+
+.review__sight {
+    display: block;
+    position: relative;
+    height: 56px;
+    margin-bottom: 24px;
+    padding-left: 77px;
+    @include text;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: none;
+    line-height: 56px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.review__textarea {
+    outline: none;
+    box-sizing: border-box;
+    width: 280px;
+    height: 160px;
+    padding: 15px 20px;
+    background-color: #f2f2f2;
+    border: none;
+    @include text;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: none;
+    text-align: left;
+}
+
+::-webkit-input-placeholder {
+    color:#000000;
+    font-weight: 700;
+}
+::-moz-placeholder {
+    color:#000000;
+    font-weight: 700;
+}/* Firefox 19+ */
+:-moz-placeholder {
+    color:#000000;
+    font-weight: 700;
+}/* Firefox 18- */
+:-ms-input-placeholder{
+    color:#000000;
+    font-weight: 700;
+}
+
+.review__radio {
+    display: none;
+}
+.review__radio-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 56px;
+    height: 56px;
+    background-color: $input-color;
+    border-radius: 50%;
+}
+.review__radio:checked + .review__radio-indicator {
+    width: 22px;
+    height: 22px;
+    background-color: #000000;
+    border: 17px solid $input-color;
+}
+.review__opinion:hover .review__radio:checked + .review__radio-indicator {
+    background-color: #000000;
+    border: 17px solid darken($input-color, 7%);
+}
+.review__opinion:active .review__radio:checked + .review__radio-indicator,
+.review__opinion:focus .review__radio:checked + .review__radio-indicator{
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 17px solid darken($input-color, 10%);
+}
+.review__opinion:hover .review__radio-indicator {
+    background-color: darken($input-color, 7%);
+}
+.review__opinion:active .review__radio-indicator,
+.review__opinion:focus .review__radio-indicator{
+    background-color: darken($input-color, 10%);
+}
+
+.review__checkbox {
+    display: none;
+}
+.review__checkbox-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 56px;
+    height: 56px;
+    background-color: $input-color;
+    border-radius: 5px;
+}
+.review__checkbox:checked + .review__checkbox-indicator {
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.review__sight:hover .review__checkbox:checked + .review__checkbox-indicator {
+    background-color: darken($input-color, 7%);
+}
+.review__sight:active .review__checkbox:checked + .review__checkbox-indicator,
+.review__sight:focus .review__checkbox:checked + .review__checkbox-indicator{
+    background-color: darken($input-color, 10%);
+}
+.review__sight:hover .review__checkbox-indicator {
+    background-color: darken($input-color, 7%);
+}
+.review__sight:active .review__checkbox-indicator,
+.review__sight:focus .review__checkbox-indicator{
+    background-color: darken($input-color, 10%);
+}
+
+.review__required {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .review {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        @include container;
+        margin-bottom: 60px;
+    }
+    .review__block {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .review__block--name {
+        padding-left: 37px;
+        width: 322px;
+        height: 370px;
+    }
+    .review__block--opinion {
+        order: -1;
+        width: 324px;
+        height: 370px;
+    }
+    .review__block--contacts {
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    .review__block--sights {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+    .review__block--textarea {
+        width: 100%;
+        padding-top: 0;
+        margin-bottom: 30px;
+    }
+    .review__opinion {
+        margin-bottom: 20px;
+    }
+    .review__sights {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 460px;
+        margin: 0 auto;
+        font-size: 0;
+    }
+    .review__sight {
+        box-sizing: border-box;
+        width: 200px;
+        margin-bottom: 30px;
+    }
+     .review__sight--bridge {
+        order: -2;
+    }
+    .review__sight--mount {
+        order: -1;
+    }
+    .review__text-field--contacts {
+    padding-bottom: 0px;
+}
+    .review__textarea {
+        width: 100%;
+        text-align: left;
+        padding: 20px;
+        font-size: 18px;
+    }
+    .review__block-title {
+        text-align: left;
+        font-size: 21px;
+        margin-bottom: 38px;
+    }
+    .review__block-title--name {
+        margin-bottom: 57px;
+    }
+    .review__block-title--contacts {
+        margin: 0 auto;
+        margin-bottom: -4px;
+    }
+    .review__block-title--sights {
+        width: 280px;
+        margin: 0 auto;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        text-align: center;
+    }
+    .review__block-title--textarea {
+        margin-bottom: 55px;
+    }
+    .review__please {
+        display: none;
+    }
+    .review__field-name--contacts {
+        padding-bottom: 5px;
+    }
+    .review__text-input--contacts {
+        width: 100%;
+    }
+    .review__required {
+        @include text;
+        font-size: 14px;
+        display: block;
+        position: absolute;
+        bottom: 22px;
+        right: 60px;
+}
+}
+
+@media (min-width: 1280px) {
+    .review {
+        width: 960px;
+        margin: 0 auto;
+        margin-bottom: 65px;
+    }
+    .review__block--name {
+        width: 480px;
+        height: 370px;
+        padding-left: 78px;
+    }
+    .review__block--opinion {
+        width: 480px;
+    }
+    .review__block--contacts {
+        width: 100%;
+    }
+    .review__block--sights {
+        width: 100%;
+        padding-bottom: 35px;
+    }
+    .review__sights {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .review__sight {
+       width:auto;
+    }
+    .review__block-title {
+        margin: 0 auto;
+        margin-bottom: 31px;
+    }
+    .review__block-title--name {
+        margin-bottom: 55px;
+    }
+    .review__block-title--contacts {
+        padding-top: 15px;
+        margin-bottom: 48px;
+    }
+     .review__block-title--sights {
+        padding-top: 12px;
+         margin-bottom: 0;
+    }
+    .review__block-title--opinion {
+        margin-bottom: 36px;
+    }
+    .review__block-title--textarea {
+        margin-bottom: 55px;
+    }
+    .review__please {
+        display: inline;
+    }
+    .review__text-field--contacts {
+        display: flext;
+        flex-direction: row;
+        width: 480px;
+        float: left;
+    }
+    .review__text-filed--email {
+        float: right;
+    }
+    .review__text-input--contacts {
+        width: 316px;
+    }
+    .review__contact {
+        display: none;
+    }
+    .review__field-name--contacts {
+      padding-left: 0; 
+        margin-right: 20px;
+        line-height: 58px;
+    }
+    .review__required {
+        right: 40px;
+    }
+}

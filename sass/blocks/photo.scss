@@ -1,0 +1,117 @@
+.photo {
+    display: flex;
+    flex-wrap: wrap;
+}
+.photo__block {
+    @include container;
+    padding-top: 22px;
+    padding-bottom: 20px;
+    border-top: 1px solid #e5e5e5;
+}
+.photo__img {
+    margin-bottom: 20px;
+    height: 280px;
+    width: 280px;
+}
+.photo__desc {
+    display: flex;
+    flex-direction: column;
+}
+.photo__name {
+    @include text;
+    text-align: left;
+    font-size: 14px;
+    font-family: "PT Sans Bold", "Arial", sans-serif;
+}
+.photo__author {
+    @include text;
+    font-size: 14px;
+    text-transform: none;
+}
+.photo__likes {
+    padding-left: 37px;
+    @include text;
+    font-family: "PT Sans Bold", "Arial", sans-serif;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 700;
+    padding-top: 18px;
+    background-image: url("../../img/icon-like.svg");
+    background-repeat: no-repeat;
+    background-position: 0 14px;
+}
+
+@media (min-width: 768px) {
+  .photo {
+        @include container;
+        font-size: 0;
+    }
+   .photo__block {
+        display: inline-block;
+        width: 324px;
+        padding:0;
+        margin-bottom: 0;
+       border-top: none;
+    }
+    .photo--first {
+        width: 100%;
+    }
+    .photo__img {
+        height: 267px;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .photo__img--first {
+        width: 100%;
+        height: 400px;
+        margin-bottom: 0;
+    }
+    .photo__desc {
+        flex-direction: row;
+        justify-content: space-between;
+        box-sizing: border-box;
+        height: 80px;
+        padding: 20px;
+        padding-top: 17px;
+        background-color: #f2f2f2;
+    }
+    .photo__desc--block3 {
+        background-color: #eaeaea;
+    }
+    .photo__name {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .photo__likes {
+        padding-top: 13px;
+        background-position: 4px 10px;
+    }
+
+}
+
+@media (min-width: 1280px) {
+   .photo {
+       padding-left: 0;
+       padding-right: 0;
+    }
+    .photo__desc {
+        position: absolute;
+        width: 100%;
+        margin-top: -80px;
+        padding-top: 20px;
+        color: #ffffff;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+  .photo__block {
+      position: relative;
+        width: 400px;
+    }
+    .photo--first {
+        width: 100%;
+    }
+    .photo__likes {
+        padding-top: 13px;
+        background-image: url("../../img/icon-like%20-%20desktop.svg");
+        background-position: 4px 10px;
+    }
+}

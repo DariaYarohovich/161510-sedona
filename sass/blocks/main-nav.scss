@@ -1,0 +1,108 @@
+.main-nav__list {
+    @include container;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 320px;   
+}
+.main-nav__item { 
+    @include text;
+    display: block;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    background-color: $body-color;
+    border-bottom: 1px solid #678fa8;
+    border-top: 1px solid #9ac2db;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+}
+.main-nav__item:hover {
+    background-color: darken($body-color, 7%);
+}
+.main-nav__item:active,
+.main-nav__item:focus {
+    background-color: darken($body-color, 10%);
+    color: $font-hover;
+}
+.main-nav--closed {
+    display: none;
+}
+.main-nav--opened {
+    display: block;
+}
+
+
+@media (min-width: 768px) {
+    .main-nav {
+        display: block
+    }
+    .main-nav__list {
+        list-style: none;
+        font-size: 0;
+        width: 698px;
+        padding-left: 50px;
+        padding-right: 20px;
+    }
+    .main-nav__list-item {
+        display: inline-block;
+        margin-right: 75px;  
+    }
+    .main-nav__list-item:nth-child(2n) {
+        margin-right: 205px;
+    }
+    .main-nav__list-item:nth-child(3n) {
+        margin-right: 52px;
+    }
+    .main-nav__list-item:last-child {
+        margin-right: 0px;
+    }
+    .main-nav__item {
+        border-bottom: none;
+        font-size: 14px;
+        color: #000;
+        background-color: #fff;
+    }
+    .main-nav__item:hover {
+        background-color: #fff;
+        color: $body-color;
+}
+.main-nav__item:active,
+.main-nav__item:focus {
+    background-color: #fff;
+    color: $font-hover-black;
+}
+.main-nav__item--active {
+    color: rgba(96, 78, 67, 0.8);
+}
+.main-nav__item--active:hover {
+    color: rgba(96, 78, 67, 1);
+}
+.main-nav__item--active:active,
+.main-nav__item--active:focus {
+    color: rgba(96, 78, 67, 0.3);
+}
+}
+
+@media (min-width: 1280px) {
+    .main-nav__list {
+       width: 1050px;
+        padding-left: 90px;
+        padding-right: 60px;
+    }
+    .main-nav__list-item {
+        margin-right: 160px;  
+    }
+    .main-nav__list-item:nth-child(2n) {
+        margin-right: 385px;
+    }
+    .main-nav__list-item:nth-child(3n) {
+        margin-right: 136px;
+    }
+    .main-nav__list-item:last-child {
+        margin-right: 0px;
+    }
+}
+

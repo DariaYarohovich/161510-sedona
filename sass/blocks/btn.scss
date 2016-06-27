@@ -1,0 +1,46 @@
+.btn {
+    display: block;
+    width: 100%;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    background-color: $body-color;
+    @include text;
+    font-family: "PT Sans Bold", "Arial", sans-serif;
+    font-size: 19px;
+    color: #fff;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+.review__button {
+    @include container;
+    margin: 0 auto;
+}
+.btn:hover {
+     background-color: darken($body-color, 7%);
+}
+.btn:active,
+.btn:focus {
+    background-color: darken($body-color, 10%);
+    color: $font-hover;
+}
+.btn[disabled] {
+    background-color: #e5e5e5;
+    cursor: default;
+}
+
+@media (min-width: 768px) {
+    .btn {
+        font-size: 22px;
+    }
+    .review__button {
+        width: 324px;
+        margin: 0;
+    }
+}
+
+@media (min-width: 1280px) {
+    .review__button {
+        width: 480px;
+    }
+}

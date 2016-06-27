@@ -1,3 +1,21 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src:
+      local("PT Sans"),
+      url("../fonts/ptsans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PT Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  src:
+      local("PT Sans Bold"),
+      url("../fonts/ptsansbold.woff") format("woff");
+}
+
 body {
     width: 320px;
     margin: 0 auto;
@@ -11,17 +29,18 @@ body {
     }
 }
 
-@import "additional.scss";
-@import "introduction.scss";
-@import "advantage.scss";
-@import "book.scss";
-@import "button.scss";
-@import "footer.scss";
-@import "header.scss";
-@import "map.scss";
-@import "navigation.scss";
-@import "photo.scss";
-@import "review.scss";
-@import "social-link.scss";
-@import "tipps.scss";
-@import "video.scss";
+
+@import "service.scss";
+@import "blocks/introduction.scss";
+@import "blocks/advantage.scss";
+@import "blocks/book.scss";
+@import "blocks/btn.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-header.scss";
+@import "blocks/map.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/photo.scss";
+@import "blocks/review.scss";
+@import "blocks/social-link.scss";
+@import "blocks/tipps.scss";
+@import "blocks/video.scss";
