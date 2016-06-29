@@ -1,6 +1,7 @@
 .video {
     padding-top: 38px;
     margin-bottom: 33px;
+    border-top: 1px solid #e5e5e5;
 }
 .video__title {
     display: block;
@@ -116,6 +117,7 @@
         @include container;
         padding-top: 57px;
         margin-bottom: 42px;
+        border-top: none;
     }
     .video__title {
         font-size: 30px;

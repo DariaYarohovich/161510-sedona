@@ -33,6 +33,9 @@
 .main-nav--opened {
     display: block;
 }
+.page-header__menu-toggle:active ~ .main-nav--closed {
+    display: block;
+}
 
 
 @media (min-width: 768px) {
@@ -64,6 +67,7 @@
         font-size: 14px;
         color: #000;
         background-color: #fff;
+        border-top: none;
     }
     .main-nav__item:hover {
         background-color: #fff;
@@ -105,4 +109,5 @@
         margin-right: 0px;
     }
 }
+
 

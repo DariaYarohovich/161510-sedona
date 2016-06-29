@@ -1,5 +1,6 @@
 .review {
     margin-bottom: 36px;
+    position: relative;
 }
 .review__block {
     padding-top: 25px;
@@ -60,6 +61,7 @@
     font-size: 14px;
     line-height: 60px;
     text-transform: uppercase;
+    margin-right: 20px;
 }
 .review__field-name--contacts {
     line-height: 30px;
@@ -81,6 +83,7 @@
 .review__text-input {
     outline: none;
     box-sizing: border-box;
+    width: 100%;
     height: 58px;
     padding: 20px;
     flex-grow: 1;
@@ -117,6 +120,20 @@
 }
 .review__email-icon {
     background-image: url("../../img/icon-mail.svg");
+}
+.review__tel-warning {
+    position: absolute;
+    z-index: -1;
+    bottom: -25px;
+    left: 20px;
+    @include text;
+    font-size: 14px;
+    text-transform: none;
+    color: #ff5c5c;
+    display: none;
+}
+.review__text-input--tel:invalid ~ .review__tel-warning{
+    display: block;
 }
 .review__opinion {
     display: block;
@@ -253,6 +270,61 @@
 .review__required {
     display: none;
 }
+.review__failure {
+    display: none;
+        box-sizing: border-box;
+        width: 320px;
+        padding: 20px;
+        margin: 0 auto;
+        box-shadow: 0px 4px 12px 3px #D2D0D0;
+        background-color: #ffffff;
+        position: absolute;
+        z-index: 2;
+        bottom: 90px;
+        left: 50%;
+        margin-left: -160px;
+    }
+    .review__send-title {
+        @include text;
+        font-family: "PT Sans Bold", "Arial", sans-serif;
+        font-size: 30px;
+        margin: 0;
+        margin-bottom: 35px;
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+    .review__send-desc {
+        @include text;
+        font-size: 14px;
+        line-height: 25px;
+        margin: 0;
+        margin-bottom: 35px;
+    }
+     .review__success {
+         display: none;
+        box-sizing: border-box;
+        width: 320px;
+        margin: 0 auto;
+        box-shadow: 0px 4px 12px 3px #D2D0D0;
+        background-color: #ffffff;
+        position: absolute;
+        left: 50%;
+        margin-left: -160px;
+        bottom: 90px;
+    }
+ .review__send-title--success {
+        margin-top: 20px;
+    }
+    .review__send-desc--success {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .review__btn-block--success {
+        background-color: #f2f2f2;
+        padding: 20px 25px;
+    }
+
 
 @media (min-width: 768px) {
     .review {
@@ -272,9 +344,20 @@
         height: 370px;
     }
     .review__block--opinion {
+        position: relative;
         order: -1;
         width: 324px;
         height: 370px;
+    }
+    .review__block--opinion::after {
+        position: absolute;
+        right: 0;
+        top: 30px;
+        content: "";
+        display: block;
+        width: 1px;
+        height: 291px;
+        background-color: #dbdbdb;
     }
     .review__block--contacts {
         width: 100%;
@@ -324,9 +407,56 @@
         text-align: left;
         font-size: 21px;
         margin-bottom: 38px;
+        position: relative;
+    }
+     .review__block-title--contacts::before,
+     .review__block-title--sights::before,
+     .review__block-title--textarea::before,{
+        position: absolute;
+        content: "";
+        width: 124px;
+        height: 1px;
+        background-color: #dbdbdb;
+    }
+    .review__block-title--contacts::before {
+        top: 35px;
+        left: -182px;
+ }
+    .review__block-title--sights::before {
+        top: 43px;
+        left: -182px;
+ }
+    .review__block-title--textarea::before {
+        top: 15px;
+        left: -195px;
+ }
+    .review__block-title--contacts::after,
+    .review__block-title--sights::after,
+    .review__block-title--textarea::after
+        {
+        position: absolute;
+        content: "";
+        width: 124px;
+        height: 1px;
+        background-color: #dbdbdb;
+    }
+    .review__block-title--contacts::after {
+        top: 35px;
+        left: 342px;
+    }
+    .review__block-title--sights::after {
+        top: 43px;
+        left: 342px;
+    }
+    .review__block-title--textarea::after {
+        top: 15px;
+        left: 328px;
     }
     .review__block-title--name {
         margin-bottom: 57px;
+    }
+    .review__block-title--name::after {
+        content: ":";
     }
     .review__block-title--contacts {
         margin: 0 auto;
@@ -353,12 +483,41 @@
     }
     .review__required {
         @include text;
+        text-align: left;
         font-size: 14px;
         display: block;
         position: absolute;
         bottom: 22px;
         right: 60px;
 }
+    .review__tel-warning {
+        top: -25px;
+        right: 0;
+        left: 455px;
+}
+    .review__failure {
+        width: 400px;
+        padding: 60px;
+        padding-bottom: 50px;
+        bottom: 170px;
+        margin-left: -200px;
+    }
+     .review__success {
+        width: 760px;
+        margin-left: -380px;
+        bottom: 330px;
+    }
+    .review__send-title--success {
+        margin-top: 60px;
+    }
+    .review__send-desc--success {
+        width: 417px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .review__btn-block--success {
+        padding: 45px 93px;
+    }
 }
 
 @media (min-width: 1280px) {
@@ -396,6 +555,9 @@
     }
     .review__block-title--name {
         margin-bottom: 55px;
+    }
+    .review__block-title--name::after {
+        content: "";
     }
     .review__block-title--contacts {
         padding-top: 15px;
@@ -436,5 +598,51 @@
     }
     .review__required {
         right: 40px;
+    }
+    .review__tel-warning {
+        top: -25px;
+        left: 0;
+        right: 88px;
+}
+    .review__failure {
+        bottom: 45px;
+    }
+    .review__success {
+        bottom: 100px;
+    }
+     .review__block-title--contacts::before,
+     .review__block-title--sights::before,
+     .review__block-title--textarea::before,{
+        width: 280px;
+    }
+    .review__block-title--contacts::before {
+        top: 30px;
+        left: -338px;
+ }
+    .review__block-title--sights::before {
+        top: 43px;
+        left: -338px;
+ }
+    .review__block-title--textarea::before {
+        top: 13px;
+        left: -351px;
+ }
+    .review__block-title--contacts::after,
+    .review__block-title--sights::after,
+    .review__block-title--textarea::after
+        {
+        width: 280px;
+    }
+    .review__block-title--contacts::after {
+        top: 30px;
+        left: 342px;
+    }
+    .review__block-title--sights::after {
+        top: 43px;
+        left: 342px;
+    }
+    .review__block-title--textarea::after {
+        top: 13px;
+        left: 328px;
     }
 }

@@ -15,12 +15,13 @@
     padding-top: 362px;
 }
 .page-header__triangle--short {
-    height: 65px;
-    background-position: -11px 37px;
+    height: 27px;
+    background-position: -11px 36px;
+    padding-top: 38px;
 }
 .page-header__triangle--long {
     height: 27px;
-    background-position: -11px 58px;
+    background-position: -11px 59px;
     padding-top: 59px;
 }
 .page-header__text {
@@ -95,6 +96,10 @@
     background-color: #ffffff;
     background-image: url("../../img/icon-menu.svg");
     cursor: pointer;
+    display: none;
+}
+.page-header__menu-toggle--display {
+    display: block;
 }
 .page-header__menu-close {
     position: absolute;
@@ -133,7 +138,7 @@
     .page-header__triangle--long {
         height: 58px;
         background-position: -6px 31px;
-        padding-top: 29px;
+        padding-top: 31px;
         width: 783px;
 }
     .page-header__text {
@@ -187,13 +192,13 @@
         margin-left: -4px;
     }
     .page-header__triangle--short {
-        width: 1210px;
+        width: 1211px;
         height: 119px;
-        background-position: -1px 63px;
+        background-position: -2px 63px;
         padding-top: 0;
 }
     .page-header__triangle--long {
-        background-position: -1px 31px;
+        background-position: -1px 32px;
     }  
      .page-header__text {
         width: 466px;
@@ -235,4 +240,8 @@
         background-image: url("../../img/bg-back-desktop@2x.jpg");
 }
 }
+}
+
+.page-header__menu-close:active .main-nav {
+    display: none;
 }

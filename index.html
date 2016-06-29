@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -9,7 +10,7 @@
       <div class="page-wrap">
           <header class="page-header">
               <div class="page-header__nav-wrap">
-                  <nav class="main-nav  main-nav--closed">
+                  <nav class="main-nav">
                       <ul class="main-nav__list">
                           <li class="main-nav__list-item"><a class="main-nav__item main-nav__item--active">Главная</a></li>
                           <li class="main-nav__list-item"><a class="main-nav__item" href="photo.html">Фото и видео</a></li>
@@ -102,15 +103,10 @@
               <div class=book__wrap>
                   <b class="book__title">Заинтересовались?</b>
                   <p class="book__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-                  <button class="book__button btn" type="button" disabled>Найти гостиницу</button>
+                  <a class="book__button btn" href="#">Найти гостиницу</a>
               </div>
           </div>
-          <div class="map">
-              <picture>
-                  <source media="(min-width: 1280px)" srcset="img/bg-map-desktop@1x.jpg">
-                  <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg">
-                  <img src="img/bg-map-mobile@1x.jpg" alt="Карта" title="Карта">
-              </picture>
+          <div class="map" id="map">
               <div class="map__marker"></div>
           </div>
           <footer class="page-footer">
@@ -123,11 +119,12 @@
                   </p>
                   <p class="page-footer__copyright">
                       Разработано
-                      <a href="htmlacademy.ru"><img src="" alt="" title="" width="" height=""></a>
+                      <a href="htmlacademy.ru"></a>
                   </p>
               </div>
           </footer>
       </div>
+      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
       <script src="js/scripts.js"></script>
   </body>
 </html>
