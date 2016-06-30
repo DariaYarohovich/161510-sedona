@@ -11,7 +11,7 @@
         balloonContent: "Седона"
      }, {
         iconLayout: "default#image",
-        iconImageHref: "../../img/icon-map-marker.svg",
+        iconImageHref: "../img/icon-map-marker.svg",
         iconImageSize: [27, 27],
         iconImageOffset: [-3, -42]
      });
