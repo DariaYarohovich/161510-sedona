@@ -1,5 +1,33 @@
 .map {
+    position: relative;
     height: 350px;
-    background-color: green;
-    opacity: 0.2;
+    background-image: url("../../img/bg-map-mobile@1x.jpg");
+}
+.map__marker {
+    position: absolute;
+    top: 157px;
+    left: 147px;
+    width: 27px;
+    height: 27px;
+    background-image: url("../../img/icon-map-marker.svg");
+}
+
+@media (min-width:768px) {
+    .map {
+        background-image: url("../../img/bg-map-tablet@1x.jpg");
+    }
+    .map__marker {
+        top: 157px;
+        left: 370px;
+    }
+}
+
+@media (min-width:1280px) {
+     .map {
+        background-image: url("../../img/bg-map-desktop@1x.jpg");
+    }
+    .map__marker {
+        top: 157px;
+        left: 586px;
+    }
 }

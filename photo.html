@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -10,30 +11,44 @@
           <header class="page-header">
               <div class="page-header__nav-wrap">
                   <nav class="main-nav  main-nav--closed">
-                          <ul class="main-nav__list">
-                              <li class="main-nav__list-item"><a class="main-nav__item" href="index.html">Главная</a></li>
-                              <li class="main-nav__list-item"><a class="main-nav__item">Фото и видео</a></li>
-                              <li class="main-nav__list-item"><a class="main-nav__item" href="form.html">Форма отзыва</a></li>
-                              <li class="main-nav__list-item"><a class="main-nav__item" href="#">HTML ACADEMY</a></li>
-                          </ul>
-                          <button class="page-header__menu-toggle" type="button">Открыть меню</button>
+                      <ul class="main-nav__list">
+                          <li class="main-nav__list-item"><a class="main-nav__item" href="index.html">Главная</a></li>
+                          <li class="main-nav__list-item"><a class="main-nav__item">Фото и видео</a></li>
+                          <li class="main-nav__list-item"><a class="main-nav__item" href="form.html">Форма отзыва</a></li>
+                          <li class="main-nav__list-item"><a class="main-nav__item" href="#">HTML ACADEMY</a></li>
+                      </ul>
+                      <button class="page-header__menu-close" type=button></button>
                   </nav>
-                  <div class="page-header__logo page-header__logo--photo">
-                          <img src="img/logo-sedona-mobile.svg" alt="logo" title="logo" width="102" height="84">
-                  </div>
+                  <button class="page-header__menu-toggle" type="button"></button>
               </div>
-                  <div class="page-header__image  page-header__image--short">
-                      <h1 class="page-header__main-title page-header__main-title--short">Sedona</h1>
-                  </div>
+              <div class="page-header__logo">
+                  <a href="index.html">
+                      <picture>
+                          <source media="(min-width: 1280px)" srcset="img/logo-sedona-desktop.svg">
+                          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                          <img class="page-header__logo-img" src="img/logo-sedona-mobile.svg" alt="Логотип" title="Логотип">
+                      </picture>
+                  </a>
+              </div>
+              <div class="page-header__image  page-header__image--short">
+                  <div class="page-header__text"></div>
+                  <div class="page-header__triangle page-header__triangle--short"></div>
+              </div>
           </header>
           <div class="introduction introduction--photo">
               <p class="introduction__title introduction__title--photo">Фото и видео</p>
               <p class="introduction__text introduction__text--photo">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
           </div>
           <div class="photo">
-              <article class="photo__block photo--first">
+              <article class="photo__block photo__block--first">
                   <div class="photo__img photo__img--first">
-                        <img src="img/photo-1-mobile@1x.jpg" alt="Дорога" title="Дорога" width="" height="">
+                      <a href="">
+                          <picture>
+                              <source media="(min-width: 1280px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                              <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                              <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Дорога" title="Дорога">
+                          </picture>
+                      </a>
                   </div>
                   <div class="photo__desc">
                       <div class="photo__desc-full">
@@ -45,7 +60,13 @@
               </article>
               <article class="photo__block">
                   <div class="photo__img">
-                    <img src="img/photo-2-mobile@1x.jpg" alt="Кактус" title="Кактус" width="" height="">
+                      <a href="">
+                          <picture>
+                              <source media="(min-width: 1280px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                              <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                              <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Кактус" title="Кактус">
+                          </picture>
+                      </a>
                   </div>
                   <div class="photo__desc">
                       <div class="photo__desc-full">
@@ -57,9 +78,15 @@
               </article>
               <article class="photo__block">
                   <div class="photo__img">
-                    <img src="img/photo-3-mobile@1x.jpg" alt="Серпантин" title="Серпантин" width="" height="">
+                      <a href="">
+                          <picture>
+                              <source media="(min-width: 1280px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                              <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                              <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Серпантин" title="Серпантин">
+                          </picture>
+                      </a>
                   </div>
-                  <div class="photo__desc">
+                  <div class="photo__desc photo__desc--block3">
                       <div class="photo__desc-full">
                           <b class="photo__name">Дорога на север</b><br>
                           <span class="photo__author">Автор фото: Петр</span>
@@ -69,7 +96,13 @@
               </article>
               <article class="photo__block">
                   <div class="photo__img">
-                    <img src="img/photo-4-mobile@1x.jpg" alt="Мост Дьявола" title="Мост Дьявола" width="" height="">
+                      <a href="">
+                          <picture>
+                              <source media="(min-width: 1280px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                              <source media="(min-width: 768px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                              <img src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Мост Дьявола" title="Мост Дьявола">
+                          </picture>
+                      </a>
                   </div>
                   <div class="photo__desc">
                       <div class="photo__desc-full">
@@ -84,15 +117,19 @@
               <b class="video__title">Все еще сомневаетесь?</b>
               <p class="video__description">Смотрите видеопрезентацию и скоре за билетами, пока они не подорожали в очередной раз!</p>
               <div class="video__box">
-                 <img class="video__main" src="img/video-mobile@1x.jpg" width="320" height="201">
-                 <div class="video__controlls">
-                     <div class="video__scroll">
-                         <i class="video__scroll-line"></i>
-                         <i class="video__scroll-toggle"></i>
-                     </div>
-                     <div class="video__reverse"></div>
-                     <div class="video__subtitles"></div>
-                     <div class="video__expand"></div>
+                  <picture>
+                      <source media="(min-width: 1280px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+                      <img class="video__main" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео">
+                  </picture>
+                  <div class="video__controlls">
+                      <div class="video__scroll">
+                          <i class="video__scroll-line"></i>
+                          <i class="video__scroll-toggle"></i>
+                      </div>
+                      <div class="video__reverse"></div>
+                      <div class="video__subtitles"></div>
+                      <div class="video__expand"></div>
                   </div>
               </div>
           </article>
@@ -104,12 +141,12 @@
                       <a href="" class="social-links__item  social-links__item--facebook">Мы в Facebook</a>
                       <a href="" class="social-links__item  social-links__item--youtube">Мы на Youtube</a>
                   </p>
-                  <p class="page-footer__copyright">
-                      Разработано
-                      <a href="htmlacademy.ru"><img src="" alt="" title="" width="" height=""></a>
+                  <p class="page-footer__copyright">Разработано
+                      <a href="htmlacademy.ru"></a>
                   </p>
               </div>
           </footer>
       </div>
+      <script src="js/scripts.js"></script>
   </body>
 </html>

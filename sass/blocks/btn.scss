@@ -5,8 +5,8 @@
     padding-bottom: 17px;
     background-color: $body-color;
     @include text;
-    font-family: "PT Sans Bold", "Arial", sans-serif;
     font-size: 19px;
+    font-weight: 700;
     color: #fff;
     text-align: center;
     border: none;
@@ -23,6 +23,13 @@
 .btn:focus {
     background-color: darken($body-color, 10%);
     color: $font-hover;
+}
+.btn[disabled] {
+    background-color: #e5e5e5;
+    cursor: default;
+}
+.book__button {
+    text-decoration: none;
 }
 
 @media (min-width: 768px) {

@@ -1,4 +1,7 @@
 
+.advantage {
+    background-color: #eeeeee;
+}
 .advantage__content {
     margin-left: 20px;
     margin-right: 20px;
@@ -9,25 +12,28 @@
     padding-top: 28px;
     color: #000;
     border-bottom: 1px solid #d6d6d6;
-    background-color: #eeeeee;
 }
-.advantage__conten--last {
+.advantage__content--last {
     border: none;
 }
 .advantage__content-main {
     @include container;
-    padding-bottom: 25px;
+    padding-bottom: 26px;
     padding-top: 53px;
     background-color: $body-color;
     color: #fff;
+    height: 100%;
+    margin-top: -56px;
 }
+
 .advantage__content-main--bridge {
     padding-top: 42px;
+    margin-top: 2px;
 }
 .advantage__title {
     display: block;
     margin-bottom: 12px;
-   @include text;
+    @include text;
     font-size: 18px;
     font-weight: 700;
 }
@@ -35,6 +41,31 @@
     display: block;
     @include text;
     font-size: 14px;
+    position: relative;
+    width: 25px;
+    margin: 0 auto;
+}
+.advantage__number::before {
+    position: absolute;
+    top: 9px;
+    left: -15px;
+    content: "";
+    width: 10px;
+    height: 1px;
+    background-color: #000000;
+}
+.advantage__number::after {
+    position: absolute;
+    top: 9px;
+    left: 27px;
+    content: "";
+    width: 10px;
+    height: 1px;
+    background-color: #000000;
+}
+.advantage__number--main::before,
+.advantage__number--main::after {
+    background-color: #ffffff;
 }
 .advantage__description {
     margin-top: 15px;
@@ -48,23 +79,23 @@
     height: 260px;
 }
 .advantage__photo--city {
-    background-image: url("../img/photo-city@1x.jpg");
+    background-image: url("../../img/photo-city@1x.jpg");
     background-repeat: no-repeat;
     background-position: -105px 0px;
     background-size: 163%;
 }
 .advantage__photo--bridge {
-    background-image: url("../img/photo-bridge@1x.jpg");
+    background-image: url("../../img/photo-bridge@1x.jpg");
     background-repeat: no-repeat;
     background-position: -95px 0px;
     background-size: 162%;
 }
 
 @media (min-width: 768px) {
-    .advantage__wrap {
+    .advantage {
         font-size: 0;
     }
-     .advantage {
+     .advantage__block {
          box-sizing: border-box;
          width: 256px;
          height: 256px;
@@ -96,14 +127,14 @@
         padding-right: 47px;
     }
     .advantage__description {
-    margin-top: 22px;
-    @include text;
-    font-size: 13px;
-    line-height: 21px;
-    text-align: center;
-    padding-left: 4px;
-    padding-right: 4px;
-}
+        margin-top: 22px;
+        @include text;
+        font-size: 13px;
+        line-height: 21px;
+        text-align: center;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
     .advantage__photo {
         display: inline-block;
         width: 512px;
@@ -114,7 +145,7 @@
         background-position: -15px -3px;
         background-size: 103%;
     }
-    .advantage--main {
+    .advantage__block--main {
         width: 768px;
         position: relative;
     }
@@ -146,7 +177,7 @@
 }
 
 @media (min-width: 1280px) {
-    .advantage {
+    .advantage__block {
         width: 400px;
         margin: 0;
     }
@@ -156,7 +187,7 @@
         padding-right: 67px;
         padding-left: 67px;
     }
-    .advantage--main {
+    .advantage__block--main {
         box-sizing: content-box;
         width: 100%;
     }
@@ -178,12 +209,10 @@
         background-size: 103%;
     }
      .advantage__content-main--bridge {
-        right: 40px;
          padding-right: 90px;
          padding-left: 90px;
     }
     .advantage__photo--bridge {
-        left: 40px;
         background-position: -15px -90px;
         background-size: 103%;
     }
@@ -191,3 +220,14 @@
         font-size: 14px;
     }
 }
+
+@media (min-resolution: 144dpi),
+       (min-resolution: 1.5dppx) {
+           .advantage__photo--city {
+               background-image: url("../../img/photo-city@2x.jpg");
+            }
+
+           .advantage__photo--bridge {
+               background-image: url("../../img/photo-bridge@2x.jpg");
+           }
+        }

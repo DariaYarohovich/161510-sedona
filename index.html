@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -9,84 +10,89 @@
       <div class="page-wrap">
           <header class="page-header">
               <div class="page-header__nav-wrap">
-                  <nav class="main-nav  main-nav--closed">
+                  <nav class="main-nav">
                       <ul class="main-nav__list">
                           <li class="main-nav__list-item"><a class="main-nav__item main-nav__item--active">Главная</a></li>
                           <li class="main-nav__list-item"><a class="main-nav__item" href="photo.html">Фото и видео</a></li>
                           <li class="main-nav__list-item"><a class="main-nav__item" href="form.html">Форма отзыва</a></li>
                           <li class="main-nav__list-item"><a class="main-nav__item" href="#">HTML ACADEMY</a></li>
                       </ul>
-                      <button class="page-header__menu-toggle" type="button"></button>
+                      <button class="page-header__menu-close" type=button></button>
                   </nav>
-                  <div class="page-header__logo">
-                      <img src="img/logo-sedona-mobile.svg" alt="logo-mobile" title="logo-mobile" width="102" height="84">
-                  </div>
+                  <button class="page-header__menu-toggle" type="button"></button>  
+              </div>
+              <div class="page-header__logo">
+                  <picture>
+                      <source media="(min-width: 1280px)" srcset="img/logo-sedona-desktop.svg">
+                      <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                      <img class="page-header__logo-img" src="img/logo-sedona-mobile.svg" alt="Логотип" title="Логотип">
+                  </picture>
               </div>
               <div class="page-header__image  page-header__image--long">
-                  <p class="page-header__title"><b class="page-header__welcome">Welcome</b><br> <span class="page-header__title-text">to the gorgeous</span></p>
-                      <h1 class="page-header__main-title">Sedona</h1>
-                      <p class="page-header__slogan">"Because the Grand Canyon sucks!"</p>
+                  <div class="page-header__text-long"></div>
+                  <div class="page-header__triangle page-header__triangle--long"></div>
               </div>
           </header>
-          <div class="introduction">
+          <div class="introduction introduction--index">
               <p class="introduction__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
               <p class="introduction__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+              <div class="introduction__triangle"></div>
           </div>
-          <div class="advantage advantage--main">
-              <div class="advantage__content-main">
-                  <b class="advantage__title">Настоящий городок</b>
-                  <span class="advantage__number">№1</span>
-                  <p class="advantage__description advantage__description--city">Седона не аттракцион для туристов, там течет своя жизнь</p>
-              </div>
-              <div class="advantage__photo advantage__photo--city">
-              </div>
-          </div>
-          <div class="tipps">
-              <div class="tipps__item  tipps__item--home">
-                  <div class="tipps__content">
-                      <p class="tipps__title">Жилье</p>
-                      <span class="tipps__description">Рекомендуем пожить в настощем мотеле, все как в кино!</span>
+          <div class="advantage">
+              <div class="advantage__block advantage__block--main">
+                  <div class="advantage__content-main">
+                      <b class="advantage__title">Настоящий городок</b>
+                      <span class="advantage__number advantage__number--main">№1</span>
+                      <p class="advantage__description advantage__description--city">Седона не аттракцион для туристов, там течет своя жизнь</p>
+                  </div>
+                  <div class="advantage__photo advantage__photo--city">
                   </div>
               </div>
-              <div class="tipps__item  tipps__item--gift">
-                  <div class="tipps__content">
-                      <p class="tipps__title">Сувениры</p>
-                      <span class="tipps__description">Не только китайского, но и местного производства!</span>
+              <div class="tipps">
+                  <div class="tipps__item  tipps__item--home">
+                      <div class="tipps__content">
+                          <p class="tipps__title">Жилье</p>
+                          <span class="tipps__description">Рекомендуем пожить в настощем мотеле, все как в кино!</span>
+                      </div>
+                  </div>
+                  <div class="tipps__item  tipps__item--gift">
+                      <div class="tipps__content">
+                          <p class="tipps__title">Сувениры</p>
+                          <span class="tipps__description">Не только китайского, но и местного производства!</span>
+                      </div>
+                  </div>
+                  <div class="tipps__item  tipps__item--food">
+                      <div class="tipps__content">
+                          <p class="tipps__title">Еда</p>
+                          <span class="tipps__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</span>
+                      </div>
                   </div>
               </div>
-              <div class="tipps__item  tipps__item--food">
-                  <div class="tipps__content">
-                      <p class="tipps__title">Еда</p>
-                      <span class="tipps__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</span>
+              <div class="advantage__block advantage__block--main">
+                  <div class="advantage__content-main advantage__content-main--bridge">
+                      <b class="advantage__title advantage__title--bridge">Там есть мост дьявола</b>
+                      <span class="advantage__number advantage__number--main">№2</span>
+                      <p class="advantage__description advantage__description--bridge">Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
+                  </div>
+                  <div class="advantage__photo advantage__photo--bridge">
                   </div>
               </div>
-          </div>
-          <div class="advantage advantage--main">
-              <div class="advantage__content-main advantage__content-main--bridge">
-                  <b class="advantage__title advantage__title--bridge">Там есть мост дьявола</b>
-                  <span class="advantage__number">№2</span>
-                  <p class="advantage__description advantage__description--bridge">Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
-              </div>
-              <div class="advantage__photo advantage__photo--bridge">
-              </div>
-          </div>
-          <div class="advantage__wrap">
-              <div class="advantage">
+              <div class="advantage__block">
                   <div class="advantage__content">
                       <b class="advantage__title">Небольшая площадь</b>
                       <span class="advantage__number">№3</span>
                       <p class="advantage__description">Все достопримеча-<wbr>тельности находятся очень близко</p>
                   </div>
               </div>
-              <div class="advantage">
+              <div class="advantage__block">
                   <div class="advantage__content">
                       <b class="advantage__title">Красивая дорога</b>
                       <span class="advantage__number">№4</span>
                       <p class="advantage__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                   </div>
               </div>
-              <div class="advantage">
-                  <div class="advantage__content advantage__conten--last">
+              <div class="advantage__block">
+                  <div class="advantage__content advantage__content--last">
                       <b class="advantage__title">Мало туристов</b>
                       <span class="advantage__number">№5</span>
                       <p class="advantage__description">Большинство едет в Гранд Каньон и толпится там</p>
@@ -97,10 +103,11 @@
               <div class=book__wrap>
                   <b class="book__title">Заинтересовались?</b>
                   <p class="book__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-                  <button class="book__button btn" type="button">Найти гостиницу</button>
+                  <a class="book__button btn" href="#">Найти гостиницу</a>
               </div>
           </div>
-          <div class="map">
+          <div class="map" id="map">
+              <div class="map__marker"></div>
           </div>
           <footer class="page-footer">
               <div class="page-footer__wrap">
@@ -110,12 +117,14 @@
                       <a href="" class="social-links__item  social-links__item--facebook">Мы в Facebook</a>
                       <a href="" class="social-links__item  social-links__item--youtube">Мы на Youtube</a>
                   </p>
-                  <p class="page-footer__copyright">
-                      Разработано
-                      <a href="htmlacademy.ru"><img src="" alt="" title="" width="" height=""></a>
+                  <p class="page-footer__copyright">Разработано
+                      <a href="htmlacademy.ru"></a>
                   </p>
               </div>
           </footer>
       </div>
+      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+      <script src="js/js_map.js"></script>>
+      <script src="js/scripts.js"></script>
   </body>
 </html>
