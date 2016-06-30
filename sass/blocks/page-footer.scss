@@ -10,9 +10,8 @@
 }
 .page-footer__hashtag {
     @include text;
-    font-family: "PT Sans Bold", "Arial", sans-serif;
     font-size: 21px;
-    font-weight: 700px;
+    font-weight: 700;
     margin:0;
     margin-bottom: 35px;
 }
@@ -21,11 +20,25 @@
     font-size: 14px;
     text-align: left;
     margin: 0;
-    padding-top: 7px;
-    background-image: url("../img/htmlacademy.svg");
+    padding-top: 9px;
+    padding-bottom: 9px;
+    background-image: url("../../img/logo-htmlacademy.svg");
     background-repeat: no-repeat;
-    background-position: 107px -3px;
-    background-size: 27%;
+    background-position: 114px 0;
+    background-size: 18%;
+    cursor: pointer;
+}
+.page-footer__copyright:hover {
+    background-image: url("../../img/logo-htmlacademy-hover.svg");
+    transition-duration: 0.5s;
+    color: $body-color;
+}
+
+.page-footer__copyright:active,
+.page-footer__copyright:focus {
+    background-image: url("../../img/logo-htmlacademy-active.svg");
+    transition-duration: 0.5s;
+    color: #b2b2b2;
 }
 
 @media (min-width: 768px) {
@@ -52,8 +65,8 @@
         width: 132px;
         padding-top: 14px;
         padding-bottom: 10px;
-        background-position: 98px 2px;
-        background-size: 32%;
+        background-position: 105px 6px;
+        background-size: 21%;
     }
 }
 
@@ -72,11 +85,10 @@
         text-align: center;
     }
     .page-footer__copyright {
-        
         width: 174px;
         padding-top: 15px;
         padding-bottom: 10px;
-        background-position: 97px 3px;
-        background-size: 24%;
+        background-position: 103px 6px;
+        background-size: 16%;
     }
 }

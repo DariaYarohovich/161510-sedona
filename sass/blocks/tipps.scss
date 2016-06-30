@@ -2,6 +2,7 @@
     @include container;
     padding-top: 20px;
     padding-bottom: 26px;
+    background-color: #ffffff;
 }
 .tipps__item {
     padding-bottom: 13px;
@@ -15,9 +16,8 @@
 }
 .tipps__title {
     @include text;
-    font-family: "PT Sans Bold", "Arial", sans-serif;
     font-size: 17px;
-    font-weight: 700px;
+    font-weight: 700;
     text-align: left;
     margin-bottom: 17px;
 }
@@ -71,14 +71,14 @@
         background-size: 30%;
         order: -2;
     }
-     .tipps__item--gift {
+    .tipps__item--gift {
         background-position: center 55px;
-         background-size: 25%;
+        background-size: 25%;
     }
-     .tipps__item--food {
+    .tipps__item--food {
         background-position: center 60px;
-         background-size: 30%;
-         order: -1;
+        background-size: 30%;
+        order: -1;
     }
     .tipps__title {
         margin-top: -2px;
@@ -102,13 +102,13 @@
         background-position: center 57px;
         background-size: 19%;
     }
-     .tipps__item--gift {
+    .tipps__item--gift {
         background-position: center 55px;
-         background-size: 16%;
+        background-size: 16%;
     }
      .tipps__item--food {
         background-position: center 60px;
-         background-size: 19%;
+        background-size: 19%;
     }
     .tipps__title {
         width: 300px;

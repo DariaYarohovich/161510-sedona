@@ -1,18 +1,54 @@
 
-/*.page-header__image {
+.page-header__image {
     @include container;
-    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-image: url("../../img/bg-back-mobile@1x.jpg");
     background-repeat: no-repeat;
+    margin-top: -28px;
+}
+.page-header__triangle {
+    display: block;
+    background-image: url("../../img/bg-intro-triangle-mobile.svg");
+    background-size: 110%;
+    background-repeat: repeat-x;
+    width: 320px;
+    margin-left: -20px;
+    padding-top: 362px;
+}
+.page-header__triangle--short {
+    height: 27px;
+    background-position: -11px 36px;
+    padding-top: 38px;
+}
+.page-header__triangle--long {
+    height: 27px;
+    background-position: -11px 58px;
+    padding-top: 59px;
+}
+.page-header__text {
+    width: 230px;
+    margin: 0 auto;
+    height: 45px;
+    background-image: url("../../img/text-sedona.svg");
+    background-repeat: no-repeat;
+    background-position: 0px 50px;
+    background-size: 100%;
+    padding-top: 47px;
+}
+.page-header__text-long {
+    width: 280px;
+    height: 217px;
+    background-position: 0px 89px;
+    padding-top: 86px;
+    background-image: url("../../img/text-sedona-index.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.page-header__image--short {
+    height: 158px;
+    background-position: -225px -233px;
 }
 .page-header__image--long {
     height: 390px;
-    background-position: -220px 0px;
-}*/
-.page-header__image--short {
-    height: 158px;
-    background-position: -154px -233px;
-    background-color: green;
-    opacity: 0.2;
 }
 .page-header__title {
     @include text;
@@ -38,81 +74,184 @@
     padding-top: 30px;
 }
 .page-header__nav-wrap {
-    height: 280px;
     position: relative;
 }
-.page-header__image--long {
-    background-color: green;
-    opacity: 0.2;
-    height: 390px;
-}
 .page-header__logo {
-    position: absolute;
+    position: relative;
     height: 83px;
-    width: 103px;
-    bottom: -27px;
-    left: 110px;
+    width: 102px;
+    margin: 0 auto;
+}
+.page-header__logo-img {
+    position: absolute;
 }
 .page-header__menu-toggle {
     position: absolute;
     right: 20px;
-    bottom: 18px;
+    bottom: -37px;
+    width: 23px;
+    height: 22px;
+    padding: 0;
+    border: none;
+    background-color: #ffffff;
+    background-image: url("../../img/icon-menu.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: none;
 }
-
+.page-header__menu-toggle--display {
+    display: block;
+}
+.page-header__menu-close {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    width: 26px;
+    height: 25px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    background-image: url("../../img/icon-cross.svg");
+    background-size: 100%;
+    cursor: pointer;
+}
 .page-header__title-text {
     font-size: 18px;
     text-transform: none;
     font-style: italic;
 }
-.page-header__menu-toggle {
-    width: 23px;
-    height: 21px;
-    padding: 0;
-    border: none;
-    background-color: none;
-    background-image: url("../../img/icon-menu.svg");
-    cursor: pointer;
-}
 
 @media (min-width: 768px) {
+    .page-header__triangle {
+        background-image: url("../../img/bg-intro-triangle-tablet.svg");
+        background-size: 100%;
+        background-position: -1px 462px;
+        width: 768px;
+        margin-left: -60px;
+    }
+    .page-header__triangle--short {
+        width: 783px;
+        height: 117px;
+        background-position: -7px 58px;
+        padding-top: 0;
+    }
+    .page-header__triangle--long {
+        height: 58px;
+        background-position: -6px 29px;
+        padding-top: 31px;
+        width: 783px;
+    }
+    .page-header__text {
+        width: 460px;
+        margin: 0 auto;
+        height: 79px;
+        background-image: url("../../img/text-sedona.svg");
+        background-repeat: no-repeat;
+        background-position: 0px 95px;
+        padding-top: 95px;
+    }
+    .page-header__text-long {
+        width: 465px;
+        height: 355px;
+        margin: 0 auto;
+        background-position: 0px 77px;
+        padding-top: 76px;
+    }
     .page-header__nav-wrap {
-    height: 56px;
-}
+        height: 56px;
+    }
     .page-header__image {
-    background-color: green;
-    opacity: 0.2;
-    height: 520px;
-}
+        background-image: url("../../img/bg-back-desktop@1x.jpg");
+        height: 290px;
+    }
     .page-header__logo {
         width: 104px;
-        left: 332px;
+        margin-top: -55px;
+    }
+    .page-header__logo-img {
+        left: 0;
     }
     .page-header__menu-toggle {
         display: none;
     }
+    .page-header__menu-close {
+        display: none;
+    }
     .page-header__image--short {
-        height: 290px;
+        background-position: -216px -228px;
+    }
+    .page-header__image--long {
+        height: 520px;
     }
 }
 
 @media (min-width: 1280px) {
-    .page-wrap {
-       /* @include container;*/
-        padding-left: 0px;
-        padding-right: 0px;
-        border-right: 40px solid #f2f2f2;
-        border-left: 40px solid #f2f2f2;
+    .page-header__triangle {
+        background-image: url("../../img/bg-intro-triangle-desktop.svg");
+        width: 1210px;
+        margin-left: -4px;
+    }
+    .page-header__triangle--short {
+        width: 1211px;
+        height: 119px;
+        background-position: -2px 62px;
+        padding-top: 0;
+    }
+    .page-header__triangle--long {
+        background-position: -1px 30px;
+        width: 1209px;
+    }  
+     .page-header__text {
+        width: 466px;
+        height: 88px;
+        background-position: 0px 102px;
+        padding-top: 94px;
+    }
+    .page-header__image {
+        padding: 0;
+        margin-top: -29px;
     }
     .page-header__logo {
         width: 187px;
-        height: 96px;
-        left: 507px;
-        bottom: -42px;
     }
      .page-header__menu-toggle {
         display: none;
     }
+    
     .page-header__image--short {
         height: 301px;
+        background-position: 0px -217px;
     }
+}
+
+@media (min-resolution: 144dpi),
+       (min-resolution: 1.5dppx) {
+           .page-header__image {
+               background-image: url("../../img/bg-back-mobile@2x.jpg");
+           }
+           .page-header__image--short {
+               background-position: -437px -496px;
+           }
+           .page-header__image--long {
+               background-position: -671px -118px;
+           }
+           @media (min-width: 768px) {
+               .page-header__image {
+                   background-image: url("../../img/bg-back-desktop@2x.jpg");
+               }
+               .page-header__image--short {
+                   background-position: -720px -515px;
+               }
+               .page-header__image--long {
+               background-position: -945px -150px;
+           }
+           }
+           @media (min-width: 1280px) {
+                .page-header__image--short {
+                   background-position: -495px -525px;
+               }
+               .page-header__image--long {
+               background-position: -660px -150px;
+           }
+           }
 }

@@ -27,9 +27,21 @@
     background-color: darken($body-color, 10%);
     color: $font-hover;
 }
+.main-nav--closed {
+    display: none;
+}
+.main-nav--opened {
+    display: block;
+}
+.page-header__menu-toggle:active ~ .main-nav--closed {
+    display: block;
+}
 
 
 @media (min-width: 768px) {
+    .main-nav {
+        display: block
+    }
     .main-nav__list {
         list-style: none;
         font-size: 0;
@@ -55,26 +67,27 @@
         font-size: 14px;
         color: #000;
         background-color: #fff;
+        border-top: none;
     }
     .main-nav__item:hover {
         background-color: #fff;
         color: $body-color;
-}
-.main-nav__item:active,
-.main-nav__item:focus {
-    background-color: #fff;
-    color: $font-hover-black;
-}
-.main-nav__item--active {
-    color: rgba(96, 78, 67, 0.8);
-}
-.main-nav__item--active:hover {
-    color: rgba(96, 78, 67, 1);
-}
-.main-nav__item--active:active,
-.main-nav__item--active:focus {
-    color: rgba(96, 78, 67, 0.3);
-}
+    }
+    .main-nav__item:active,
+    .main-nav__item:focus {
+        background-color: #fff;
+        color: $font-hover-black;
+    }
+    .main-nav__item--active {
+        color: rgba(96, 78, 67, 0.8);
+    }
+    .main-nav__item--active:hover {
+        color: rgba(96, 78, 67, 1);
+    }
+    .main-nav__item--active:active,
+    .main-nav__item--active:focus {
+        color: rgba(96, 78, 67, 0.3);
+    }
 }
 
 @media (min-width: 1280px) {
@@ -96,4 +109,5 @@
         margin-right: 0px;
     }
 }
+
 
