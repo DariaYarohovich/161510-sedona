@@ -13,6 +13,7 @@
 .video__description {
     @include text;
     font-size: 14px;
+    font-weight: 400;
     line-height: 23px;
     margin: 0 auto;
     margin-bottom: 35px;
@@ -98,7 +99,6 @@
     background-image: url(../../img/icon-video-fullscreen-hover.svg);
     transition-duration: 0.3s;
 }
-
 .video__reverse:active,
 .video__reverse:focus {
     background-image: url(../../img/icon-video-replay-active.svg);
@@ -142,39 +142,39 @@
         background-color: rgba(0, 0, 0, 0.3);
     }
     .video__scroll {
-    flex-grow: 1;
-    position: relative;
-    height: 93px;
-    background-color: rgba(0, 0, 0, 0.3);
-}
+        flex-grow: 1;
+        position: relative;
+        height: 93px;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
     .video__scroll-line {
-    top: 45px;
-    width: 390px;
-}
-.video__scroll-toggle {
-    top: 42px;
-    left: 136px;
-}
-.video__reverse {
-    order: -1;
-    height: 93px;
-    background-color: rgba(0, 0, 0, 0.3);
-    background-position: 33px center;
-    background-image: url(../../img/icon-video-replay-tablet.svg);
-}
-.video__subtitles {
-    height: 93px;
-    padding-left: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-    background-position: 15px center;
-    background-image: url(../../img/icon-video-subtitles-tablet.svg);
-}
-.video__expand {
-    height: 93px;
-    background-color: rgba(0, 0, 0, 0.3);
-    background-position: 9px center;
-    background-image: url(../../img/icon-video-fullscreen-tablet.svg);
-}
+        top: 45px;
+        width: 390px;
+    }
+    .video__scroll-toggle {
+        top: 42px;
+        left: 136px;
+    }
+    .video__reverse {
+        order: -1;
+        height: 93px;
+        background-color: rgba(0, 0, 0, 0.3);
+        background-position: 33px center;
+        background-image: url(../../img/icon-video-replay-tablet.svg);
+    }
+    .video__subtitles {
+        height: 93px;
+        padding-left: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        background-position: 15px center;
+        background-image: url(../../img/icon-video-subtitles-tablet.svg);
+    }
+    .video__expand {
+        height: 93px;
+        background-color: rgba(0, 0, 0, 0.3);
+        background-position: 9px center;
+        background-image: url(../../img/icon-video-fullscreen-tablet.svg);
+    }
 }
 
 @media (min-width: 1280px) {
@@ -189,5 +189,5 @@
     }
     .video__scroll-line {
         width: 540px;
-}
+    }
 }

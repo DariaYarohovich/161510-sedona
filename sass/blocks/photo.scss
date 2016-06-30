@@ -21,7 +21,6 @@
     @include text;
     text-align: left;
     font-size: 14px;
-    font-family: "PT Sans Bold", "Arial", sans-serif;
 }
 .photo__author {
     @include text;
@@ -31,7 +30,6 @@
 .photo__likes {
     padding-left: 37px;
     @include text;
-    font-family: "PT Sans Bold", "Arial", sans-serif;
     text-align: left;
     font-size: 14px;
     font-weight: 700;
@@ -42,18 +40,18 @@
 }
 
 @media (min-width: 768px) {
-  .photo {
+    .photo {
         @include container;
         font-size: 0;
     }
-   .photo__block {
+    .photo__block {
         display: inline-block;
         width: 324px;
         padding:0;
         margin-bottom: 0;
-       border-top: none;
+        border-top: none;
     }
-    .photo--first {
+    .photo__block--first {
         width: 100%;
     }
     .photo__img {
@@ -86,7 +84,6 @@
         padding-top: 13px;
         background-position: 4px 10px;
     }
-
 }
 
 @media (min-width: 1280px) {
@@ -102,11 +99,11 @@
         color: #ffffff;
         background-color: rgba(0, 0, 0, 0.3);
     }
-  .photo__block {
-      position: relative;
+    .photo__block {
+        position: relative;
         width: 400px;
     }
-    .photo--first {
+    .photo__block--first {
         width: 100%;
     }
     .photo__likes {

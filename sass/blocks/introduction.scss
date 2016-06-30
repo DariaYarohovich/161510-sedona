@@ -25,16 +25,16 @@
     text-align: center;
 }
 .introduction__title--form {
-        font-size: 18px;
-    }
+    font-size: 18px;
+}
 .introduction__title--photo {
     font-size: 18px;
 }
 .introduction__text {
+    margin-bottom: 0;
     @include text;
     font-size: 13px;
     line-height: 25px;
-    margin-bottom: 0;
 }
 .introduction__text--form {
     font-size: 14px;
@@ -45,6 +45,7 @@
 }
 .introduction--form {
     padding-bottom: 18px;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 @media (min-width: 768px) {
@@ -71,10 +72,10 @@
         font-size: 30px;
         margin-bottom: 30px;
     }
-    
     .introduction--form {
         margin: 0 auto;
         padding-top: 74px;
+        border-bottom: none;
     }
     .introduction__title--form {
         margin-bottom: 30px;

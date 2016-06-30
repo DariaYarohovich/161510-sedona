@@ -21,7 +21,7 @@
 }
 .page-header__triangle--long {
     height: 27px;
-    background-position: -11px 59px;
+    background-position: -11px 58px;
     padding-top: 59px;
 }
 .page-header__text {
@@ -34,7 +34,7 @@
     background-size: 100%;
     padding-top: 47px;
 }
-.page-header__text--long {
+.page-header__text-long {
     width: 280px;
     height: 217px;
     background-position: 0px 89px;
@@ -90,11 +90,12 @@
     right: 20px;
     bottom: -37px;
     width: 23px;
-    height: 21px;
+    height: 22px;
     padding: 0;
     border: none;
     background-color: #ffffff;
     background-image: url("../../img/icon-menu.svg");
+    background-repeat: no-repeat;
     cursor: pointer;
     display: none;
 }
@@ -114,7 +115,6 @@
     background-size: 100%;
     cursor: pointer;
 }
-
 .page-header__title-text {
     font-size: 18px;
     text-transform: none;
@@ -132,38 +132,38 @@
     .page-header__triangle--short {
         width: 783px;
         height: 117px;
-        background-position: -7px 59px;
+        background-position: -7px 58px;
         padding-top: 0;
-}
+    }
     .page-header__triangle--long {
         height: 58px;
-        background-position: -6px 31px;
+        background-position: -6px 29px;
         padding-top: 31px;
         width: 783px;
-}
+    }
     .page-header__text {
         width: 460px;
         margin: 0 auto;
-        height: 78px;
+        height: 79px;
         background-image: url("../../img/text-sedona.svg");
         background-repeat: no-repeat;
         background-position: 0px 95px;
         padding-top: 95px;
-}
-    .page-header__text--long {
+    }
+    .page-header__text-long {
         width: 465px;
         height: 355px;
         margin: 0 auto;
         background-position: 0px 77px;
         padding-top: 76px;
-}
+    }
     .page-header__nav-wrap {
         height: 56px;
-}
+    }
     .page-header__image {
         background-image: url("../../img/bg-back-desktop@1x.jpg");
         height: 290px;
-}
+    }
     .page-header__logo {
         width: 104px;
         margin-top: -55px;
@@ -186,7 +186,7 @@
 }
 
 @media (min-width: 1280px) {
-     .page-header__triangle {
+    .page-header__triangle {
         background-image: url("../../img/bg-intro-triangle-desktop.svg");
         width: 1210px;
         margin-left: -4px;
@@ -194,27 +194,22 @@
     .page-header__triangle--short {
         width: 1211px;
         height: 119px;
-        background-position: -2px 63px;
+        background-position: -2px 62px;
         padding-top: 0;
-}
+    }
     .page-header__triangle--long {
-        background-position: -1px 32px;
+        background-position: -1px 30px;
+        width: 1209px;
     }  
      .page-header__text {
         width: 466px;
         height: 88px;
         background-position: 0px 102px;
         padding-top: 94px;
-}
+    }
     .page-header__image {
         padding: 0;
         margin-top: -29px;
-    }
-    .page-wrap {
-        padding-left: 0px;
-        padding-right: 0px;
-        border-right: 40px solid #f2f2f2;
-        border-left: 40px solid #f2f2f2;
     }
     .page-header__logo {
         width: 187px;
@@ -229,19 +224,34 @@
     }
 }
 
-@media
-  (min-resolution: 144dpi),
-  (min-resolution: 1.5dppx) {
-      .page-header__image {
-    background-image: url("../../img/bg-back-mobile@2x.jpg");
-}
-      @media (min-width: 768px) {
-    .page-header__image {
-        background-image: url("../../img/bg-back-desktop@2x.jpg");
-}
-}
-}
-
-.page-header__menu-close:active .main-nav {
-    display: none;
+@media (min-resolution: 144dpi),
+       (min-resolution: 1.5dppx) {
+           .page-header__image {
+               background-image: url("../../img/bg-back-mobile@2x.jpg");
+           }
+           .page-header__image--short {
+               background-position: -437px -496px;
+           }
+           .page-header__image--long {
+               background-position: -671px -118px;
+           }
+           @media (min-width: 768px) {
+               .page-header__image {
+                   background-image: url("../../img/bg-back-desktop@2x.jpg");
+               }
+               .page-header__image--short {
+                   background-position: -720px -515px;
+               }
+               .page-header__image--long {
+               background-position: -945px -150px;
+           }
+           }
+           @media (min-width: 1280px) {
+                .page-header__image--short {
+                   background-position: -495px -525px;
+               }
+               .page-header__image--long {
+               background-position: -660px -150px;
+           }
+           }
 }

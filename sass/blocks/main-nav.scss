@@ -72,22 +72,22 @@
     .main-nav__item:hover {
         background-color: #fff;
         color: $body-color;
-}
-.main-nav__item:active,
-.main-nav__item:focus {
-    background-color: #fff;
-    color: $font-hover-black;
-}
-.main-nav__item--active {
-    color: rgba(96, 78, 67, 0.8);
-}
-.main-nav__item--active:hover {
-    color: rgba(96, 78, 67, 1);
-}
-.main-nav__item--active:active,
-.main-nav__item--active:focus {
-    color: rgba(96, 78, 67, 0.3);
-}
+    }
+    .main-nav__item:active,
+    .main-nav__item:focus {
+        background-color: #fff;
+        color: $font-hover-black;
+    }
+    .main-nav__item--active {
+        color: rgba(96, 78, 67, 0.8);
+    }
+    .main-nav__item--active:hover {
+        color: rgba(96, 78, 67, 1);
+    }
+    .main-nav__item--active:active,
+    .main-nav__item--active:focus {
+        color: rgba(96, 78, 67, 0.3);
+    }
 }
 
 @media (min-width: 1280px) {
