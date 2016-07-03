@@ -68,7 +68,6 @@
         flex-direction: row;
         justify-content: space-between;
         box-sizing: border-box;
-        height: 80px;
         padding: 20px;
         padding-top: 17px;
         background-color: #f2f2f2;
@@ -84,6 +83,15 @@
         padding-top: 13px;
         background-position: 4px 10px;
     }
+    .photo__picture {
+        width: 324px;
+        height: 267px;
+    }
+    .photo__picture--first {
+        width: 648px;
+        height: 400px;
+    }
+    
 }
 
 @media (min-width: 1280px) {
@@ -93,6 +101,7 @@
     }
     .photo__desc {
         position: absolute;
+        z-index: 3;
         width: 100%;
         margin-top: -80px;
         padding-top: 20px;
@@ -110,5 +119,13 @@
         padding-top: 13px;
         background-image: url("../../img/icon-like%20-%20desktop.svg");
         background-position: 4px 10px;
+    }
+    .photo__picture {
+        width: 400px;
+        height: 267px;
+    }
+    .photo__picture--first {
+        width: 1200px;
+        height: 400px;
     }
 }

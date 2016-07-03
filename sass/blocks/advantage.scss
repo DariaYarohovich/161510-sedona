@@ -98,14 +98,14 @@
      .advantage__block {
          box-sizing: border-box;
          width: 256px;
-         height: 256px;
+         min-height: 256px;
          display: inline-block;
          vertical-align: top;
     }
     .advantage__content {
         box-sizing: border-box;
         width: 256px;
-        height: 256px;
+        min-height: 256px;
         padding-left: 50px;
         padding-right: 50px;
         padding-top: 43px;
@@ -183,7 +183,7 @@
     }
     .advantage__content {
         width: 400px;
-        height: 256px;
+        min-height: 256px;
         padding-right: 67px;
         padding-left: 67px;
     }
