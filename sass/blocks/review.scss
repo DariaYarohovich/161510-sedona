@@ -336,7 +336,7 @@
         border-bottom: none;
     }
     .review__block--name {
-        padding-left: 37px;
+        padding-left: 57px;
         width: 322px;
         height: 370px;
     }
@@ -450,6 +450,7 @@
     }
     .review__block-title--name {
         margin-bottom: 57px;
+        margin-left: -2px;
     }
     .review__block-title--name::after {
         content: ":";
@@ -517,6 +518,11 @@
     .review__btn-block--success {
         padding: 45px 93px;
     }
+    .review__contacts-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
 
 @media (min-width: 1280px) {
@@ -554,6 +560,7 @@
     }
     .review__block-title--name {
         margin-bottom: 55px;
+        margin-left: 0;
     }
     .review__block-title--name::after {
         content: "";
@@ -568,6 +575,7 @@
     }
     .review__block-title--opinion {
         margin-bottom: 36px;
+        margin-left: 77px;
     }
     .review__block-title--textarea {
         margin-bottom: 55px;
@@ -576,13 +584,9 @@
         display: inline;
     }
     .review__text-field--contacts {
-        display: flext;
+        display: flex;
         flex-direction: row;
         width: 480px;
-        float: left;
-    }
-    .review__text-filed--email {
-        float: right;
     }
     .review__text-input--contacts {
         width: 316px;
@@ -642,5 +646,8 @@
     .review__block-title--textarea::after {
         top: 13px;
         left: 328px;
+    }
+    .review__contacts-wrap {
+        flex-direction: row;
     }
 }

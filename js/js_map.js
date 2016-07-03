@@ -15,6 +15,5 @@
         iconImageSize: [27, 27],
         iconImageOffset: [-3, -42]
      });
-
     myMap.geoObjects.add(myPlacemark);
 });

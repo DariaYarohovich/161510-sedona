@@ -51,6 +51,7 @@
     }
     .main-nav__list-item {
         display: inline-block;
+        vertical-align: top;
         margin-right: 75px;  
     }
     .main-nav__list-item:nth-child(2n) {

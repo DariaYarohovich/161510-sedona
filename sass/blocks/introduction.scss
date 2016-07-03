@@ -3,15 +3,18 @@
     padding-top: 37px;
     padding-bottom: 30px;
 }
-.introduction__triangle {
-    background-image: url("../../img/bg-intro-triangle-mobile.svg");
-    background-position: 160px 0;
-    width: 320px;
-    height: 26px;
-    transform: rotate(180deg);
-    margin-left: -20px;
-    margin-top: 28px;
-}
+ .introduction__triangle {
+     position: relative;
+     height: 50px;
+   }
+.introduction__triangle::after {
+    content: '';
+    position: absolute;
+    right: -105px;
+    top: 15px;
+    border: 244px solid transparent;
+    border-top: 30px solid #ffffff;
+   }
 .introduction--photo {
     padding-bottom: 25px;
 }

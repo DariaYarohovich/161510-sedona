@@ -19,12 +19,15 @@
     @include text;
     font-size: 14px;
     text-align: left;
+    color: #000000;
+    text-decoration: none;
     margin: 0;
     padding-top: 9px;
     padding-bottom: 9px;
+    padding-right: 60px;
     background-image: url("../../img/logo-htmlacademy.svg");
     background-repeat: no-repeat;
-    background-position: 114px 0;
+    background-position: 113px 0;
     background-size: 18%;
     cursor: pointer;
 }
@@ -67,6 +70,7 @@
         padding-bottom: 10px;
         background-position: 105px 6px;
         background-size: 21%;
+        padding-right: 0;
     }
 }
 

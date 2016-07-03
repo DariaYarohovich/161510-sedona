@@ -1,18 +1,18 @@
 {
-  "name": "161510-sedona",
-  "version": "0.1.0",
-  "private": true,
-  "description": "Личный проект «Седона» от HTML Academy",
-  "author": "Дарья Ярохович",
-  "repository": {
+    "name": "161510-sedona",
+    "version": "0.1.0",
+    "private": true,
+    "description": "Личный проект «Седона» от HTML Academy",
+    "author": "Дарья Ярохович",
+    "repository": {
     "type": "git",
     "url": "git@github.com:htmlacademy-adaptive/161510-sedona.git"
-  },
-  "bugs": {
+    },
+    "bugs": {
     "url": "https://github.com/htmlacademy-adaptive/161510-sedona/issues"
-  },
-  "homepage": "https://github.com/htmlacademy-adaptive/161510-sedona",
-  "devDependencies": {
+    },
+    "homepage": "https://github.com/htmlacademy-adaptive/161510-sedona",
+    "devDependencies": {
     "autoprefixer": "6.3.6",
     "css-mqpacker": "5.0.1",
     "editorconfig-tools": "0.1.1",
@@ -28,13 +28,13 @@
     "grunt-svgmin": "3.2.0",
     "grunt-svgstore": "1.0.0",
     "load-grunt-tasks": "^3.5.0"
-  },
-  "scripts": {
+    },
+    "scripts": {
     "test": "editorconfig-tools check *",
     "build": "grunt build",
     "start": "npm run build && grunt serve"
-  },
-  "engines": {
+    },
+    "engines": {
     "node": "4.4.5"
-  }
+    }
 }
